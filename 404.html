@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,10 +13,17 @@
 <body></body>
 
 </html>
-<!--
+--!>
+<!--- Created by Bing AI --!>
 <script>
   var url = window.location.href;
   var newUrl = url.replace(".php", ".html");
-  window.location.replace(newUrl);
+  var xhr = new XMLHttpRequest();
+  xhr.open("HEAD", newUrl, false);
+  xhr.send();
+  if (xhr.status == 200) {
+    window.location.replace(newUrl);
+  } else {
+    document.write("Sorry, the page you are looking for does not exist.");
+  }
 </script>
---!>
