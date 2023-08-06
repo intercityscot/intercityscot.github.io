@@ -4,26 +4,24 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Redirecting...</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="0; URL='https://intercityscot.github.io'" />
-    <title>404 - redirect</title>
+    <!-- Redirect to index.html
+        <meta http-equiv="refresh" content="0; URL='https://intercityscot.github.io'" />
+    --!>
+    <script>
+        var url = window.location.href;
+        var newUrl = url.replace(".php", ".html");
+        var xhr = new XMLHttpRequest();
+        xhr.open("HEAD", newUrl, false);
+        xhr.send();
+        if (xhr.status == 200) {
+            window.location.replace(newUrl);
+        } else {
+            document.write("Sorry, the page you are looking for does not exist.");
+        }
+    </script>
 </head>
-
-<body></body>
-
+<body>
+</body>
 </html>
---!>
-<!--- Created by Bing AI --!>
-<script>
-  var url = window.location.href;
-  var newUrl = url.replace(".php", ".html");
-  var xhr = new XMLHttpRequest();
-  xhr.open("HEAD", newUrl, false);
-  xhr.send();
-  if (xhr.status == 200) {
-    window.location.replace(newUrl);
-  } else {
-    document.write("Sorry, the page you are looking for does not exist.");
-  }
-</script>
