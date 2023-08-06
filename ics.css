@@ -1,0 +1,53 @@
+/* New elements are not being used, because IE8 does not support them. */
+
+/* Revised elements */
+
+h2 { text-align: center;
+}
+
+td { white-space: nowrap;
+}
+
+table {
+    border-style: none;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/* Classes */
+
+h1.icsHeading {
+  text-align: center;
+  /* content: "The Inter-city Scot"; */
+}
+
+h2.icsSubheading {
+	text-align: center;
+}
+
+span.classRef {
+  font-size: medium;
+  font-weight: normal;
+}
+
+.center  {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.newListing {
+  text-decoration: none;
+  color: red;
+}
+
+.oldListing {
+  text-decoration: line-through;
+  color: red;
+}
